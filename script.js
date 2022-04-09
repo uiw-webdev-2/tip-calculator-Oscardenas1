@@ -10,8 +10,6 @@
  * @link https://www.techonthenet.com/js/currency_codes.php
  */
 
- https://www.techonthenet.com/js/currency_codes.php
-
  const formatter = (locale = "en-US", currency = "USD", value) => {
     let formattedValue = new Intl.NumberFormat(locale, {
       style: "currency",
@@ -32,6 +30,13 @@
       Total:          ${formatter(locale, currency, total)}
     `);
   };
+  const amount = document.querySelector('#amount');
+  const percent = document.querySelector('#percentage');
+  const button = document.querySelector('.result');
+  //const tag = document.getElementsByTagName('option').innerHTML;
+
+  button.addEventListener("click", () =>{
+    tipCalculator(amount, percent, "es", "USD");
+  }, false);
   
-  tipCalculator(29.95, 18, "en", "USD");
   
