@@ -13,9 +13,10 @@
       <section>
           <!--Amount-->
           <label for="amount">Amount</label>
-          <input type="text" id = "amount" name = "amount" />
+          <input type="text" id = "amount" name = "amount" placeholder="00.00" required/>
           <!--Locale Dropdown-->
-          <select>
+          <select id="language">
+            <option value="" disabled selected>Country.</option>
             <option value="en">USD</option>
             <option value="es">MXN</option>
             <option value="en">AUD</option>
@@ -24,7 +25,7 @@
           </select><br><br>
           <!--Tip Percentage-->
           <label for="percentage">Tip Percentage</label>
-          <input type="text" id = "percentage" name="percentage" /><br><br>
+          <input type="text" id = "percentage" name="percentage" placeholder="00.00%" required/><br><br>
           <!-- Button -->
           <button class="result">Calculate</button><br><br>
           <!-- Result -->
