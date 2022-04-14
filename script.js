@@ -13,8 +13,10 @@
  const amount = document.querySelector('#amount').value; // Amount input value
  const percent = document.querySelector('#percentage').value; // percent input value
  const button = document.querySelector('.result'); // button
- const tag = document.getElementsByTagName('option').value; // Option tag
+ //const tag = document.getElementsByTagName('option').value; // Option tag
  const CC = document.getElementsByTagName('option').innerHTML; //Country Code
+ const lang = document.getElementById('language');
+ const tag = lang.options[lang.selectedIndex].text;
 
 
  const formatter = (locale = "en-US", currency = "USD", value) => {
