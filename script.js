@@ -41,9 +41,13 @@
   };
 
   button.addEventListener("click", () =>{
-    tipCalculator(amount, percent, CC, tag);
+    console.log(amount);
+    console.log(percent);
+    console.log(CC);
+    console.log(tag);
+    //tipCalculator(amount, percent, CC, tag);
     //tipCalculator(100,10,'en','USD');
-    console.log();
+    //console.log();
   }, false);
   
   
