@@ -15,8 +15,8 @@
  const button = document.querySelector('.result'); // button
  //const tag = document.getElementsByTagName('option').value; // Option tag
  const CC = document.getElementsByTagName('option').innerHTML; //Country Code
- const lang = document.getElementById('language');
- const tag = lang.options[lang.selectedIndex].text;
+ var lang = document.getElementById('language');
+ var tag= lang.options[lang.selectedIndex].text;
 
 
  const formatter = (locale = "en-US", currency = "USD", value) => {
@@ -41,8 +41,9 @@
   };
 
   button.addEventListener("click", () =>{
-    tipCalculator(amount, percent, tag, CC);
+    tipCalculator(amount, percent, CC, tag);
     //tipCalculator(100,10,'en','USD');
+    console.log();
   }, false);
   
   
