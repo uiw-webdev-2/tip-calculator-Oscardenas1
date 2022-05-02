@@ -5,18 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Console demo</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <h1>Tip Calculator</h1>
     <main>
       <section>
           <!--Amount-->
-          <input type="text" />
-          <!--Tip Percentage-->
-          <input type="text" />
+          <label for="amount">Amount</label>
+          <input type="text" id = "amount" name = "amount" placeholder="00.00" required/>
           <!--Locale Dropdown-->
-          <select>
+          <select id="language">
+            <option value="" disabled selected>Country.</option>
             <option value="en">USD</option>
-          </select>
+            <option value="es">MXN</option>
+            <option value="en">AUD</option>
+            <option value="zh">CNY</option>
+            <option value="eu">EUR</option>
+          </select><br><br>
+          <!--Tip Percentage-->
+          <label for="percentage">Tip Percentage</label>
+          <input type="text" id = "percentage" name="percentage" placeholder="00.00%" required/><br><br>
+          <!-- Button -->
+          <button class="result">Calculate</button><br><br>
+          <!-- Result -->
+          <!-- <h1 class="resultTxt">0</h1> -->
       </section>
     </main>
   </body>
